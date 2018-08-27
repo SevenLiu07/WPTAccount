@@ -1,0 +1,4 @@
+build/*.js
+config/*.js
+src/utils/trackers.js
+src/vuex/mutations.js

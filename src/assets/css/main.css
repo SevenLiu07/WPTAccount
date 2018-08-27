@@ -1,0 +1,429 @@
+body {
+	background-color: #29547f;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden !important;
+}
+
+h1, h2 {
+  	font-weight: normal;
+}
+
+a {
+  	color: #42b983;
+  	outline: none;
+}
+
+input{
+	box-sizing: border-box
+}
+
+#app{
+	margin: 0;
+	padding: 0;
+}
+
+.hover_effect:hover, .hover_effect:focus {
+}
+
+.hidden {
+	display: none;
+}
+
+/* WEB TOP MESSAGE */
+
+.web_top_title {
+	position: absolute;
+	text-align: center;
+	top: -77px;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+	display: inline-block;
+	color: #fff;
+	border-radius: 3px;
+	width: 100%;
+}
+
+.top_title_main {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.top_title_sub {
+	font-size: 21px;
+	line-height: 0.5;
+}
+
+/* TOP NOTIFICATION */
+
+.top_notification {
+	position: absolute;
+	text-align: center;
+	top: -25px;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+	display: inline-block;
+	padding: 5px 8px;
+	font-size: 12px;
+	background-color: #ca4444;
+	color: #fff;
+	border-radius: 3px;
+	min-width: 200px;
+}
+
+/* FLOATING CONTAINER*/
+
+.floating_container {
+	width: 60%;
+	min-width: 300px;
+	height: 380px;
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+  	top: 50%;
+  	border-radius: 5px;
+	-webkit-transform: translate(-50%,-50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+  	-webkit-box-shadow: 0 0 40px 5px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 0 40px 5px rgba(0,0,0,0.4);
+	box-shadow: 0 0 40px 5px rgba(0,0,0,0.4);
+}
+
+.container_content {
+	width: 100%;
+	height: 100%;
+	background-color: #0e2849;
+	border-radius: 5px;
+  	overflow: hidden;
+  	position: relative;
+}
+
+/* LEFT IMAGE */
+
+.bg_image {
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: white;
+	background: url('../../assets/images/bg.png') no-repeat;
+	background-position: 50%;
+	-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	position: relative;
+}
+
+.bg_image_web {
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: white;
+	background: url('../../assets/images/bg2.png') no-repeat;
+	background-position: 50%;
+	-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	position: relative;
+}
+
+.bg_image img,.bg_image_web img {
+	width: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+  	-ms-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+}
+
+/* RIGHT CONTENT */
+
+.content_wrapper {
+	width: 50%;
+	height: 100%;
+	float: right;
+	position: relative;
+}
+
+.content_container {
+	width: 100%;
+	text-align: left;
+	position: absolute;
+	left: 50%;
+  	top: 50%;
+	-webkit-transform: translate(-50%,-70%);
+  	-ms-transform: translate(-50%, -70%);
+  	transform: translate(-50%, -70%);
+}
+
+.content {
+	padding: 0 50px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 350px;
+}
+/*修改*/
+.avatar_content{
+  padding: 0 90px;
+}
+.avatar_top{
+	width: 100%;
+	text-align: left;
+	position: absolute;
+	left: 50%;
+	top: 60% !important;
+	-webkit-transform: translate(-50%,-70%);
+  	-ms-transform: translate(-50%, -70%);
+  	transform: translate(-50%, -70%);
+}
+.content_top {
+	margin-bottom: 10px;
+  overflow: hidden;
+}
+.content_title {
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+  float: left;
+}
+
+.switch {
+	line-height: 1.74;
+}
+.switch a {
+	font-size: 12px;
+	margin-left: 8px;
+}
+
+.alt_option {
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 40px;
+	background-color: #111;
+	text-align: center;
+}
+
+/* FACEBOOK LOGIN */
+
+.facebook_login {
+	width: 100%;
+}
+.facebook_button {
+	width: auto;
+	background-color: #3b5998;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	position: relative;
+	-webkit-box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.3);
+	transition: opacity .25s ease-in-out;
+   	-moz-transition: opacity .25s ease-in-out;
+   	-webkit-transition: opacity .25s ease-in-out;
+   	cursor: pointer;
+}
+
+.facebook_logo img {
+	height: 22px;
+	position: absolute;
+	left: 10px;
+}
+
+.facebook_text {
+	margin-left: 20px;
+}
+
+/* SEPARATOR */
+
+.login_separator {
+	text-align: center;
+	color: #fff;
+	margin: 15px 0 5px 0;
+	font-weight: bold;
+}
+
+.with_email {
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* EMAIL LOGIN */
+
+.email_login {
+	width: 100%;
+	position: relative;
+}
+
+.form {
+	width: 100%;
+}
+.form_field {
+	width: 100%;
+	background-color: #fff;
+	text-align: left;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	font-size: 19px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	opacity: 0.6;
+	outline: none;
+}
+
+.form_field:focus {
+	opacity: 1;
+}
+
+.email_button {
+	margin-top: 5px;
+	width: 100%;
+	background-color: #ca4444;
+	border: 1px solid #ca4444;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 17px;
+	font-weight: normal;
+	outline: none;
+	transition: background-color .25s ease-in-out;
+   	-moz-transition: background-color .25s ease-in-out;
+   	-webkit-transition: background-color .25s ease-in-out;
+   	transition: border-color .25s ease-in-out;
+   	-moz-transition: border-color .25s ease-in-out;
+   	-webkit-transition: border-color .25s ease-in-out;
+   	cursor: pointer;
+}
+
+.email_button:focus {
+	border: 1px solid rgba(255,255,255,0.5);
+}
+
+.email_button:hover {
+	border: 1px solid rgba(255,255,255,0.5);
+}
+
+.forgot_password {
+	width: 100%;
+	position: absolute;
+	right: 0;
+	bottom: -28px;
+	font-size: 15px;
+}
+
+
+
+/* RESPONSIVE MEDIA QUERIES*/
+
+@media all and (max-width: 1690px) {
+
+}
+@media all and (max-width: 1280px) {
+
+}
+@media all and (max-width: 980px) {
+
+}
+
+@media all and (max-width: 980px) {
+	.floating_container {
+		height: 80%;
+		width: 90%;
+	}
+
+	.top_notification {
+		width: 100%;
+		min-width: 0;
+		padding: 5px 0;
+	}
+
+	.web_top_title {
+		display: none;
+	}
+
+	.bg_image {
+		float: none;
+		width: 100%;
+		height: 40%;
+	}
+
+    .bg_image_web{
+		float: none;
+		width: 100%;
+		height: 40%;
+	}
+
+	.content_wrapper {
+		width: 100%;
+		height: 60%;
+		float: none;
+		position: relative;
+	}
+
+	.content_container {
+		top: 50% !important;
+	}
+
+	.content_title {
+		font-size: 13px;
+	}
+
+	.content {
+		padding: 50px 40px 0 40px;
+	}
+
+	.content_container {
+		-webkit-transform: translate(-50%,-60%);
+  		-ms-transform: translate(-50%, -60%);
+  		transform: translate(-50%, -60%);
+	}
+
+	.bg_image img {
+		top: 50%;
+	}
+
+	.bg_image_web img {
+		top: 50%;
+	}
+
+	.facebook_button {
+		font-size: 15px;
+	}
+
+	.facebook_logo img {
+		height: 20px;
+	}
+
+	.alt_option {
+		top: 0;
+	}
+
+	.switch {
+		line-height: 1;
+	}
+	.switch a {
+		font-size: 9px;
+		line-height: 0.5;
+	}
+
+	.forgot_password {
+		font-size: 13px;
+	}
+}
+

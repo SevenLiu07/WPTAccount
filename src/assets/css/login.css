@@ -1,0 +1,271 @@
+body {
+	background-color: #29547f;
+}
+
+h1, h2 {
+  	font-weight: normal;
+}
+
+ul {
+  	list-style-type: none;
+ 	 padding: 0;
+}
+
+li {
+  	display: inline-block;
+  	margin: 0 10px;
+}
+
+a {
+  	color: #42b983;
+  	outline: none;
+}
+
+input{
+	box-sizing: border-box
+}
+
+.hidden {
+	display: none;
+}
+
+/* TOP NOTIFICATION */
+
+.top_notification {
+	position: absolute;
+	top: -25px;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+	display: inline-block;
+	padding: 5px 8px;
+	font-size: 12px;
+	background-color: #ca4444;
+	color: #fff;
+	border-radius: 3px;
+	min-width: 200px;
+}
+
+/* FLOATING CONTAINER*/
+
+.floating_container {
+	width: 60%;
+	min-width: 300px;
+	height: 350px;
+	margin: 0 auto;
+	position: absolute;
+	left: 50%;
+  	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+
+.container_content {
+	width: 100%;
+	height: 100%;
+	background-color: #0e2849;
+	border-radius: 5px;
+  	overflow: hidden;
+  	position: relative;
+}
+
+/* LEFT IMAGE */
+
+.bg_image {
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: white;
+	background-image: url('../../assets/images/bg.png');
+	background-size: 100%;
+}
+
+.bg_image img {
+	width: 200px;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+  	-ms-transform: translateY(-50%);
+  	transform: translateY(-50%);
+}
+
+/* RIGHT CONTENT */
+
+.content_wrapper {
+	width: 50%;
+	height: 100%;
+	float: right;
+	position: relative;
+}
+
+.content {
+	padding: 0 50px;
+}
+
+.content_top {
+	margin-bottom: 10px;
+}
+
+.content_title {
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.switch a {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.alt_option {
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	font-size: 14px;
+	line-height: 40px;
+	background-color: #111;
+}
+
+/* FACEBOOK LOGIN */
+
+.facebook_login {
+	width: 100%;
+}
+.facebook_button {
+	width: auto;
+	background-color: #3b5998;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	position: relative;
+	-webkit-box-shadow: 0 0 50px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 50px 5px rgba(0,0,0,0.3);
+	box-shadow: 0 0 50px 5px rgba(0,0,0,0.3);
+}
+
+.facebook_logo img {
+	height: 22px;
+	position: absolute;
+	left: 10px;
+}
+
+.facebook_text {
+	margin-left: 20px;
+}
+
+/* EMAIL LOGIN */
+
+.email_login {
+	width: 100%;
+	position: relative;
+}
+
+.form {
+	width: 100%;
+}
+.form_field {
+	width: 100%;
+	background-color: #fff;
+	text-align: left;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	font-size: 19px;
+	font-weight: normal;
+	margin-bottom: 10px;
+	opacity: 0.6;
+	outline: none;
+	transition: opacity .25s ease-in-out;
+   	-moz-transition: opacity .25s ease-in-out;
+   	-webkit-transition: opacity .25s ease-in-out;
+	/*-webkit-box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 50px 5px rgba(0,0,0,0.3);*/
+}
+
+.form_field:focus {
+	opacity: 1;
+}
+
+.email_button {
+	margin-top: 5px;
+	width: 100%;
+	background-color: #ca4444;
+	border: 1px solid #ca4444;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 17px;
+	font-weight: normal;
+	outline: none;
+	transition: background-color .25s ease-in-out;
+   	-moz-transition: background-color .25s ease-in-out;
+   	-webkit-transition: background-color .25s ease-in-out;
+   	transition: border-color .25s ease-in-out;
+   	-moz-transition: border-color .25s ease-in-out;
+   	-webkit-transition: border-color .25s ease-in-out;
+   	cursor: pointer;
+}
+
+.email_button:focus {
+	background-color: #d83737;
+	border: 1px solid rgba(255,255,255,0.5);
+}
+
+.email_button:hover {
+	background-color: #d83737;
+	border: 1px solid rgba(255,255,255,0.5);
+}
+
+.forgot_password {
+	width: 100%;
+	position: absolute;
+	right: 0px;
+	bottom: -28px;
+	font-size: 15px;
+}
+
+/* RESPONSIVE MEDIA QUERIES*/
+
+@media all and (max-width: 1690px) {
+
+}
+@media all and (max-width: 1280px) {
+
+}
+@media all and (max-width: 980px) {
+
+}
+@media all and (max-width: 736px) {
+
+}
+@media all and (max-width: 736px) {
+	.floating_container {
+		height: 80%;
+		width: 90%;
+	}
+
+	.bg_image {
+		float: none;
+		width: 100%;
+		height: 50%;
+	}
+
+	.content_wrapper {
+	width: 100%;
+	height: 50%;
+	float: none;
+	position: relative;
+	}
+
+	.bg_image img {
+		top: 25%;
+	}
+}

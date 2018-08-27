@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PlayWPT - Play Free Texas Holdem Poker by the World Poker Tour</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  </head>
+  <body onselectstart="return false;">
+    <div id="app"></div>
+    <script src="static/js/jquery1.10.2.js"></script>
+    <script src="static/js/RASAmin.js"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        // 判断IE
+        function IE() {
+            if (window.VBArray) {
+                var mode = document.documentMode
+                return mode ? mode : window.XMLHttpRequest ? 7 : 6
+            } else {
+                return NaN
+            }
+        }
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=660043590839998&ev=PageView&noscript=1"/></noscript>
+    <!-- End Facebook Pixel Code -->
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        /*统计对象*/
+        window.conversionLabels = {
+            as:"iIUfCJqZ7G0QzISpnAM",//Avatar selected
+            ue:"QXcECK7C0m0QzISpnAM",//Username entered
+            fb:"BsikCKvC0m0QzISpnAM",//Registration w/ Facebook
+            em:"rvKdCMzw5m0QzISpnAM" //Registration w/ Email Address
+        };
+    </script>
+    <!-- End Google Analytics-->
+    <script type="text/javascript" src="https://static.play-wpt.com/www/scripts/google_tg.js" async></script><!--google统计-->
+    <script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"  async></script>
+    <!-- yahoo pixel Analytics-->
+    <script type="application/javascript">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({projectId:"10000",properties:{pixelId:"10024933"}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");
+    window.dotq = window.dotq || [];
+    function yAnalytics(ec, ea, el, ev, gv) {
+        window.dotq.push({
+          'projectId': '10000',
+          'properties': {
+            'pixelId': '10024933',
+            'qstrings': {
+              'et': 'custom',
+              'ec': ec,
+              'ea': ea,
+              'el': el,
+              'ev': ev,
+              'gv': gv
+            }
+          } 
+        });
+    }
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://sp.analytics.yahoo.com/spp.pl?a=10000&.yp=10024933"/></noscript>
+  </body>
+  <script type="text/javascript">
+  window.fbAsyncInit = function() {
+    var appid = "";
+    if (location.href.indexOf('staging') !== -1) {
+        appid = '303740520120867'; // 仿真app_id
+    } else {
+        appid = '122212108221118'; // 线上app_id 内网：370652456705003
+    }
+    FB.init({
+      appId            : appid, 
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.10'
+    });
+    FB.AppEvents.logPageView();
+  };
+  (function(d, s, id){
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+</html>
